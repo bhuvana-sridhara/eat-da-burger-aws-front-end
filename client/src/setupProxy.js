@@ -1,5 +1,7 @@
 const createProxyMiddleware = require('http-proxy-middleware');
 
+//app.use('/', proxy('http://internal-3tier-b-m-Internal-LB-1739696943.us-east-1.elb.amazonaws.com'))
+
 module.exports = function(app) {
   app.use(
     '/',
@@ -9,4 +11,6 @@ module.exports = function(app) {
       changeOrigin: true,
     })
   );
+
+  app.listen(5000);
 };
