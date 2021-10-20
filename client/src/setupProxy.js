@@ -1,4 +1,4 @@
-const {createProxyMiddleware} = require('http-proxy-middleware');
+const createProxyMiddleware = require('http-proxy-middleware');
 
 //app.use('/', proxy('http://internal-3tier-b-m-Internal-LB-1739696943.us-east-1.elb.amazonaws.com'))
 // const express = require('express');
